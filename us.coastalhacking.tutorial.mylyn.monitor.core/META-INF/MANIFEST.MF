@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mylyn Monitor Tutorial Core
+Bundle-SymbolicName: us.coastalhacking.tutorial.mylyn.monitor.core
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: us.coastalhacking.tutorial.mylyn.monitor.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.mylyn.monitor.core;bundle-version="3.24.1",
+ org.eclipse.mylyn.monitor.ui;bundle-version="3.24.1",
+ org.junit,
+ org.junit.jupiter.api,
+ org.junit.jupiter.engine,
+ org.junit.jupiter.migrationsupport,
+ org.junit.jupiter.params,
+ org.junit.platform.commons,
+ org.junit.platform.engine,
+ org.junit.platform.launcher,
+ org.junit.platform.runner,
+ org.junit.platform.suite.api,
+ org.junit.vintage.engine,
+ org.hamcrest.core,
+ org.opentest4j,
+ org.apiguardian,
+ org.eclipse.core.resources;bundle-version="3.13.0"
+Import-Package: org.osgi.service.component.annotations;version="1.3.0"
+Service-Component: OSGI-INF/us.coastalhacking.tutorial.mylyn.monitor.core.TutorialProvider.xml
+Bundle-ActivationPolicy: lazy
